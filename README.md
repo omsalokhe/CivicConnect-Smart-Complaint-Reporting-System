@@ -4,10 +4,10 @@ CivicConnect is a smart, citizen-driven web platform that empowers people to rep
 
 🧩 Problem Statement
 In many cities, civic issues often go unreported or unresolved due to:
- -> Lack of a unified complaint platform
- -> No transparency in complaint resolution
- -> Manual and inefficient tracking processes
- -> Absence of digital accountability
+-> Lack of a unified complaint platform
+-> No transparency in complaint resolution
+-> Manual and inefficient tracking processes
+-> Absence of digital accountability
 Citizens rarely receive updates once a complaint is raised, leading to frustration and mistrust in governance systems.
 
 💡 Proposed Solution

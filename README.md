@@ -2,7 +2,7 @@
 CivicConnect is a smart, citizen-driven web platform that empowers people to report real-world civic issues like garbage, road damage, and broken streetlights. By enabling community participation, issue visibility, and admin-led resolution, it promotes transparency, faster action, and stronger civic responsibility at zero cost.
 
 
-🧩 Problem Statement
+## 🧩 Problem Statement
 
 In many cities, civic issues often go unreported or unresolved due to:
 - Lack of a unified complaint platform
@@ -11,7 +11,7 @@ In many cities, civic issues often go unreported or unresolved due to:
 - Absence of digital accountability
 - Citizens rarely receive updates once a complaint is raised, leading to frustration and mistrust in governance systems.
 
-💡 Proposed Solution
+## 💡 Proposed Solution
 
 CivicConnect provides a zero-cost, web-based solution where:
 - Citizens can report issues with location details (manual input)
@@ -21,22 +21,24 @@ CivicConnect provides a zero-cost, web-based solution where:
 - Duplicate complaints are intelligently grouped
 - This system ensures end-to-end visibility from complaint submission to resolution.
 
-Architecture diagram of the proposed solution
+  👉 View all screenshots in the **/screenshots** folder.
+
+## Architecture diagram of the proposed solution
 
 ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/e53d61f04c99acab8024e98ab431fd0788c021b1/public/architecture%20of%20process.png)
 
-🚀 Opportunities Addressed
+## 🚀 Opportunities Addressed
  ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/8ff8e4820e6da8308370b6ec7800886077fb0f8a/public/image4_imresizer.jpg)
   
-Existing Civic Complaint Systems in India
+## Existing Civic Complaint Systems in India
 
 <img width="1012" height="158" alt="image" src="https://github.com/user-attachments/assets/91462357-c038-42da-b47c-efae5704fd7c" />
 
- How CivicConnect Is Different & Better
+ ## How CivicConnect Is Different & Better
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/db85de9a-414b-4494-a7ac-b466acbd4516" />
 
-🧠 Brief About the Solution
+## 🧠 Brief About the Solution
 
 - CivicConnect is built using a modern web architecture with separation of concerns:
   - Frontend handles UI and user interactions
@@ -47,7 +49,7 @@ Existing Civic Complaint Systems in India
   - Status changes are reflected instantly
   - Duplicate complaints strengthen issue priority
   
-Technologies Used
+## Technologies Used
 - 🌐 Frontend
    - HTML5
    - CSS3 (Modern UI Design)
@@ -59,7 +61,7 @@ Technologies Used
    - MongoDB
    - Mongoose ODM
 
-🛡️ License
+## 🛡️ License
 
  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>

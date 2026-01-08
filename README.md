@@ -19,6 +19,9 @@ CivicConnect provides a zero-cost, web-based solution where:
 -> Duplicate complaints are intelligently grouped
 This system ensures end-to-end visibility from complaint submission to resolution.
 
+Architecture diagram of the proposed solution
+![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/e53d61f04c99acab8024e98ab431fd0788c021b1/public/architecture%20of%20process.png)
+
 🚀 Opportunities Addressed
  ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/8ff8e4820e6da8308370b6ec7800886077fb0f8a/public/image4_imresizer.jpg)
   

@@ -3,23 +3,26 @@ CivicConnect is a smart, citizen-driven web platform that empowers people to rep
 
 
 🧩 Problem Statement
+
 In many cities, civic issues often go unreported or unresolved due to:
--> Lack of a unified complaint platform
--> No transparency in complaint resolution
--> Manual and inefficient tracking processes
--> Absence of digital accountability
-Citizens rarely receive updates once a complaint is raised, leading to frustration and mistrust in governance systems.
+- Lack of a unified complaint platform
+- No transparency in complaint resolution
+- Manual and inefficient tracking processes
+- Absence of digital accountability
+- Citizens rarely receive updates once a complaint is raised, leading to frustration and mistrust in governance systems.
 
 💡 Proposed Solution
+
 CivicConnect provides a zero-cost, web-based solution where:
--> Citizens can report issues with location details (manual input)
--> Complaints are stored and tracked digitally
--> Status updates are visible to both users and admins
--> Administrators can mark complaints as resolved
--> Duplicate complaints are intelligently grouped
-This system ensures end-to-end visibility from complaint submission to resolution.
+- Citizens can report issues with location details (manual input)
+- Complaints are stored and tracked digitally
+- Status updates are visible to both users and admins
+- Administrators can mark complaints as resolved
+- Duplicate complaints are intelligently grouped
+- This system ensures end-to-end visibility from complaint submission to resolution.
 
 Architecture diagram of the proposed solution
+
 ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/e53d61f04c99acab8024e98ab431fd0788c021b1/public/architecture%20of%20process.png)
 
 🚀 Opportunities Addressed
@@ -34,26 +37,33 @@ Existing Civic Complaint Systems in India
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/db85de9a-414b-4494-a7ac-b466acbd4516" />
 
 🧠 Brief About the Solution
-CivicConnect is built using a modern web architecture with separation of concerns:
-  Frontend handles UI and user interactions
-  Backend manages complaint logic and APIs
-  Database stores complaints securely
-The system ensures that:
-  Every complaint is uniquely identifiable
-  Status changes are reflected instantly
-  Duplicate complaints strengthen issue priority
+
+- CivicConnect is built using a modern web architecture with separation of concerns:
+  - Frontend handles UI and user interactions
+  - Backend manages complaint logic and APIs
+  - Database stores complaints securely
+- The system ensures that:
+  - Every complaint is uniquely identifiable
+  - Status changes are reflected instantly
+  - Duplicate complaints strengthen issue priority
   
 Technologies Used
-🌐 Frontend
-   HTML5
-   CSS3 (Modern UI Design)
-   JavaScript (ES6+)
-⚙ Backend
-   Node.js
-   Express.js
-🗄 Database
-   MongoDB
-   Mongoose ODM
-  
+- 🌐 Frontend
+   - HTML5
+   - CSS3 (Modern UI Design)
+   - JavaScript (ES6+)
+- ⚙ Backend
+   - Node.js
+   - Express.js
+- 🗄 Database
+   - MongoDB
+   - Mongoose ODM
+
+🛡️ License
+
+ GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
   
 

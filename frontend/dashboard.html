@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadDashboard()">
+
+<header class="navbar">
+    <div class="logo">🌿 <strong>CivicConnect</strong></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+
+    </nav>
+</header>
+
+<h2 style="margin:40px;">Community Complaint Dashboard</h2>
+
+<table>
+    <thead>
+        <tr>
+            <!-- <th>ID</th> -->
+            <th>Category</th>
+            <th>Area</th>
+            <th>Status</th>
+            <th>Reports</th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+    <tbody id="dashboardTable">
+        <!-- DATA WILL COME FROM JS -->
+    </tbody>
+</table>
+
+<script src="js/main.js">
+    loadDashboard();
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Issue</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🌿 <strong>CivicConnect</strong></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+
+    </nav>
+</header>
+
+<div class="card">
+    <h2>📣 Report an Issue</h2>
+
+    <!-- SINGLE FORM -->
+    <form onsubmit="submitComplaint(event)">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="Road">Road Damage</option>
+            <option value="Garbage">Garbage Issue</option>
+            <option value="Street Light">Street Light Failure</option>
+        </select>
+
+        <input type="text" id="location" placeholder="Area / Landmark" required>
+
+        <textarea id="description" placeholder="Describe the issue" required></textarea>
+
+        <input type="file" id="image">
+
+        <button type="submit" class="btn btn-primary" style="width:100%">
+            Submit Complaint
+        </button>
+
+    </form>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -3,12 +3,18 @@
 ## Home Page
 ![](screenshots/home.png)
 
-## Complaint Submission
-![](screenshots/complaint-form.png)
+## Report Submission
+![](screenshots/reportanissue.png)
+
+## public Dashboard
+![](screenshots/publicdashboard.png)
 
 ## Admin Dashboard
-![](screenshots/admin-panel.png)
+![](screenshots/admincontrolpannel.png)
+
+## Track report status
+![](screenshots/trackreportstatus.png)
 
 ## Dark Mode
-![](screenshots/dark-mode.png)
+![](screenshots/darktheme.png)
 

@@ -20,6 +20,7 @@ CivicConnect provides a zero-cost, web-based solution where:
 This system ensures end-to-end visibility from complaint submission to resolution.
 
 🚀 Opportunities Addressed
+ ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/b03d47cbc4fbd7494480498001bc58a0c882f377/workflow.png)
 a. How does it solve the problem?
   -> Digitizes the entire complaint lifecycle
   -> Removes dependency on physical visits or calls

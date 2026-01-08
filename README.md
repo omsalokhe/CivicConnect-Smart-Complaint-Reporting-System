@@ -20,18 +20,15 @@ CivicConnect provides a zero-cost, web-based solution where:
 This system ensures end-to-end visibility from complaint submission to resolution.
 
 🚀 Opportunities Addressed
- ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/bae65554058e6c439615231a8695100b279ade1a/public/image4.png)
-a. How does it solve the problem?
-  -> Digitizes the entire complaint lifecycle
-  -> Removes dependency on physical visits or calls
-  -> Enables quick administrative action
-  -> Builds citizen trust through transparency
+ ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/8ff8e4820e6da8308370b6ec7800886077fb0f8a/public/image4_imresizer.jpg)
   
-b. Existing Civic Complaint Systems in India
+Existing Civic Complaint Systems in India
+
 <img width="1012" height="158" alt="image" src="https://github.com/user-attachments/assets/91462357-c038-42da-b47c-efae5704fd7c" />
 
-c. How CivicConnect Is Different & Better
-<img width="1012" height="1012" alt="image" src="https://github.com/user-attachments/assets/db85de9a-414b-4494-a7ac-b466acbd4516" />
+ How CivicConnect Is Different & Better
+
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/db85de9a-414b-4494-a7ac-b466acbd4516" />
 
 🧠 Brief About the Solution
 CivicConnect is built using a modern web architecture with separation of concerns:
@@ -45,15 +42,15 @@ The system ensures that:
   
 Technologies Used
 🌐 Frontend
-  HTML5
-  CSS3 (Modern UI Design)
-  JavaScript (ES6+)
+   HTML5
+   CSS3 (Modern UI Design)
+   JavaScript (ES6+)
 ⚙ Backend
-  Node.js
-  Express.js
+   Node.js
+   Express.js
 🗄 Database
-  MongoDB
-  Mongoose ODM
+   MongoDB
+   Mongoose ODM
   
   
 

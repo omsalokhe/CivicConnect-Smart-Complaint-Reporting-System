@@ -60,6 +60,23 @@ CivicConnect provides a zero-cost, web-based solution where:
 - 🗄 Database
    - MongoDB
    - Mongoose ODM
+ 
+## How to run locally?
+1. Clone the repo:
+   
+git clone https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System
+
+2. Install dependencies
+   
+npm install
+
+3. Start backend
+   
+node server.js
+
+4. Open frontend
+   
+Open index.html using Live Server
 
 ## 🛡️ License
 

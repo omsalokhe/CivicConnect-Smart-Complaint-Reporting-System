@@ -23,7 +23,7 @@ CivicConnect provides a zero-cost, web-based solution where:
 
   👉 View all screenshots in the **/screenshots** folder.
 
-## Architecture diagram of the proposed solution
+## Process Flow & System Architecture Diagram
 
 ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/e53d61f04c99acab8024e98ab431fd0788c021b1/public/architecture%20of%20process.png)
 

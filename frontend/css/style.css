@@ -212,3 +212,19 @@ body.dark button:hover {
     --text-dark: #e6e6e6;
     --neon-blue: #00e5ff;
 }
+/* Ensure the success modal is always on the very top layer */
+.modal, .success-popup {
+    z-index: 9999 !important;
+}
+
+/* Ensure the map stays below navigation and popups */
+#map {
+    z-index: 1 !important;
+}
+/* Keeps the map layers at the bottom */
+
+/* Fix for manual typing: make sure the location input isn't greyed out */
+#location {
+    cursor: text;
+    background-color: var(--input-bg); /* Use your theme variable */
+}

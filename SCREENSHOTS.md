@@ -10,7 +10,7 @@
 ![](screenshots/public_dashboard.png)
 
 ## Admin Dashboard
-![](screenshots/admincontrolpannel.png)
+![](screenshots/admin_control_panel.png)
 
 ## Track report status
 ![](screenshots/trackreportstatus.png)

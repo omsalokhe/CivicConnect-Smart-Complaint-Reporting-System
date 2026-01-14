@@ -3,6 +3,7 @@
 <head>
     <title>Public Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body onload="loadDashboard()">
@@ -35,10 +36,38 @@
     </tbody>
 </table>
 <br>
-<div id="piechart" style="width: 100%; height: 400px;"></div>
+<div style="display: flex; flex-direction: row; gap: 20px; margin: 20px; align-items: stretch;">
+    
+    <div class="card" style="flex: 1; min-width: 0;">
+        <h3></h3>
+        <div id="piechart" style="width: 100%; height: 400px;"></div>
+    </div>
 
-<script src="js/main.js">
-    loadDashboard();
+    <div class="card" style="flex: 1; min-width: 0;">
+        <h3>📍 Live Incident Map</h3>
+        <div id="adminMap" style="height: 400px; width: 100%; border-radius: 8px; border: 1px solid #ccc;"></div>
+        <div style="margin-top: 10px; font-size: 0.8em; display: flex; gap: 10px;">
+            <span><b style="color: red;">●</b> Pending</span>
+            <span><b style="color: green;">●</b> Resolved</span>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/admin_map.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Only call the dashboard table/chart logic here.
+        // The map logic is already triggered inside admin_map.js
+        if (typeof loadDashboard === 'function') {
+            loadDashboard();
+        }
+    });
+</script>
 </script>
 </body>
 </html>

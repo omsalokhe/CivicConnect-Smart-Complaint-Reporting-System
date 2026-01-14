@@ -1,3 +1,71 @@
+// ==========================================
+// 1. GOOGLE CHARTS INITIALIZATION
+// ==========================================
+// Load the library 
+if (typeof google !== 'undefined') {
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(refreshChart);
+}
+
+// Function to fetch data and draw/refresh the chart
+async function refreshChart() {
+    try {
+        const res = await fetch("http://localhost:5000/api/complaints");
+        const complaints = await res.json();
+
+        const counts = {};
+        complaints.forEach(c => {
+            // We use c.reportCount to make the graph slices grow dynamically
+            counts[c.category] = (counts[c.category] || 0) + (c.reportCount || 1);
+        });
+
+        const chartData = [['Category', 'Total Reports']];
+        for (let category in counts) {
+            chartData.push([category, counts[category]]);
+        }
+
+        const dataTable = google.visualization.arrayToDataTable(chartData);
+        // Inside your refreshChart function
+        const isDarkMode = document.body.classList.contains("dark");
+        const textColor = isDarkMode ? "#f0f0f0" : "#333333"; // White for dark, Dark-grey for light
+
+        const options = {
+                title: 'Live Civic Issue Statistics',
+                // 1. Color of the Main Title
+                titleTextStyle: {
+                    color: textColor,
+                    fontSize: 18,
+                    bold: true
+                },
+                // 2. Color of the Legend (the variable labels)
+                legend: {
+                    textStyle: { color: textColor }
+                },
+                // 3. Color of the labels inside/around the pie slices
+                pieSliceTextStyle: {
+                    color: '#ffffff' // Usually white looks best inside the colored slices
+                },
+                is3D: true,
+                backgroundColor: 'transparent', // Keeps it matching your site background
+                chartArea: { width: '90%', height: '80%' },
+                animation: {
+                    duration: 1000,
+                    easing: 'out',
+                    startup: true
+                }
+        };
+
+        const chartElement = document.getElementById('piechart');
+        if (chartElement) {
+            const chart = new google.visualization.PieChart(chartElement);
+            chart.draw(dataTable, options);
+        }
+    } catch (err) {
+        console.error("Chart error:", err);
+    }
+}
+
+
 // SUBMIT COMPLAINT
 // async function submitComplaint() {
 //     const data = {
@@ -168,14 +236,18 @@ async function trackComplaint() {
 }
 
 
-//report same issue
 async function reportSameIssue(id) {
+    // 1. Tell the server to increase the count
     await fetch(`http://localhost:5000/api/complaints/report-same/${id}`, {
         method: "PUT"
     });
-    loadDashboard();
-}
 
+    // 2. Refresh the table (your existing code)
+    loadDashboard(); 
+
+    // 3. RE-DRAW THE CHART (The missing piece!)
+    refreshChart(); 
+}
 
 function loadAdminDashboard() {
     loadDashboard(); // reuse
@@ -183,6 +255,7 @@ function loadAdminDashboard() {
 // =========================
 // DARK MODE TOGGLE
 // =========================
+
 function toggleTheme() {
     document.body.classList.toggle("dark");
 
@@ -192,8 +265,13 @@ function toggleTheme() {
     } else {
         localStorage.setItem("theme", "light");
     }
-}
 
+    // TRIGGER THE CHART REFRESH
+    // This makes the headings change color immediately when you click the toggle
+    if (typeof refreshChart === 'function') {
+        refreshChart();
+    }
+}
 // Load saved theme
 (function () {
     const savedTheme = localStorage.getItem("theme");

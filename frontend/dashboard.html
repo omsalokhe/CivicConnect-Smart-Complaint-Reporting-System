@@ -3,6 +3,7 @@
 <head>
     <title>Public Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body onload="loadDashboard()">
 
@@ -33,6 +34,8 @@
         <!-- DATA WILL COME FROM JS -->
     </tbody>
 </table>
+<br>
+<div id="piechart" style="width: 100%; height: 400px;"></div>
 
 <script src="js/main.js">
     loadDashboard();

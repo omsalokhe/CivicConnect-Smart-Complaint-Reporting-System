@@ -25,12 +25,14 @@
 
         <input type="text" id="name" placeholder="Your Name" required>
 
-        <select id="category" required>
+        <select id="category" required onchange="toggleOtherCategory()">
             <option value="">Select Category</option>
             <option value="Road">Road Damage</option>
             <option value="Garbage">Garbage Issue</option>
             <option value="Street Light">Street Light Failure</option>
+            <option value="Other">Other (Please Specify)</option>
         </select>
+        <input type="text" id="otherCategoryInput" placeholder="Enter custom category" style="display:none; margin-top: 10px;">
 
         <!-- <input type="text" id="location" placeholder="Area / Landmark" required> -->
         <div class="form-group" style="margin-top: 15px;">

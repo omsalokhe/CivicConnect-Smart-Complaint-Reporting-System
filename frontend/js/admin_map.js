@@ -143,14 +143,15 @@ async function loadComplaintsOnMap() {
                 
                 validLocations.push([lat, lng]);
 
-                const markerColor = complaint.status === 'Resolved' ? 'green' : 'red';
-                
+                const markerColor = complaint.status === 'Resolved' ? '#2ecc71' : '#ff0000'; // Bright Green or Red
+
                 const marker = L.circleMarker([lat, lng], {
-                    radius: 12, 
+                    radius: 15,          // INCREASED from 12 to 15 for "Big" dots
                     fillColor: markerColor,
-                    color: "#fff",
-                    weight: 3,
-                    fillOpacity: 0.9
+                    color: "#ffffff",    // White border
+                    weight: 3,           // Thick border to make it pop
+                    opacity: 1,
+                    fillOpacity: 1       // Solid color, no transparency
                 }).addTo(adminMap);
 
                 // Privacy-friendly popup

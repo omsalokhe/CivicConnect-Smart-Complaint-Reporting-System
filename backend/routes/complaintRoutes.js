@@ -17,6 +17,8 @@ router.post("/", async (req, res) => {
             name: req.body.name,
             category: req.body.category,
             area: req.body.area,
+            latitude: req.body.latitude, 
+            longitude: req.body.longitude,
             description: req.body.description,
             status: "Pending",
             reportCount: 1

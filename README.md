@@ -2,8 +2,8 @@
 
 CivicConnect is a high-performance, citizen-driven platform designed to bridge the gap between residents and local authorities. It empowers users to report real-world issues such as road damage, garbage, and streetlighting with precise GPS data, real-time tracking, and data-driven analytics and stronger civic responsibility at zero cost.
 
-- 🚀 Live Demo: Experience CivicConnect
 ## 📺 Project Walkthrough
+### 🚀 [Live Demo: Experience CivicConnect](https://civicconnectscomplaintsystem.netlify.app/)
 Click the badge above to watch the full project explanation and technical demonstration
 
 ## 🧩 The Problem
@@ -66,18 +66,21 @@ CivicConnect provides a zero-cost, web-based solution where:
    - Google Charts API
 
 ## 📂 System Architecture
-
-├── backend/
-│   ├── models/        # Mongoose Schemas (Complaint.js)
-│   ├── routes/        # API Endpoints (complaintRoutes.js)
-│   └── server.js      # Entry Point
-└── frontend/
-    ├── css/           # Modern UI styling (Dark/Light mode)
-    ├── js/            # Main logic & Admin Map integration
-    ├── index.html     # Landing Page
-    ├── dashboard.html # Public Analytics & Map
-    └── report.html    # Complaint Submission with Leaflet Map
- 
+### **High-Level Data Flow**
+CivicConnect follows a **decoupled MERN architecture**, ensuring a clear separation between user interaction, business logic, and data persistence.
+```mermaid
+graph TD
+    A[Citizen / User] -->|Reports Issue| B(Frontend: HTML/JS)
+    B -->|API Request: POST| C{Backend: Node/Express}
+    C -->|Store Data| D[(Database: MongoDB)]
+    C -->|Fetch Stats| D
+    C -->|Send Response| B
+    B -->|Render Analytics| E[Google Charts API]
+    B -->|Render Map| F[Leaflet.js / OSM]
+    
+    G[Admin] -->|Update Status| C
+    C -->|PUT Request| D
+```
 ## How to run locally?
 1. Clone the repo:
    

@@ -2,13 +2,18 @@
 // 1. GOOGLE CHARTS INITIALIZATION
 // ==========================================
 // Load the library 
-if (typeof google !== 'undefined') {
+if (typeof google !== 'undefined'&& google.charts) {
     google.charts.load('current', { 'packages': ['corechart'] });
     google.charts.setOnLoadCallback(refreshChart);
 }
 
 // Function to fetch data and draw/refresh the chart
 async function refreshChart() {
+    // SAFETY CHECK: Exit if google is not defined yet
+    if (typeof google === 'undefined' || !google.visualization) {
+        console.warn("Google Charts library not loaded yet. Retrying...");
+        return; 
+    }
     try {
         const res = await fetch("http://localhost:5000/api/complaints");
         const complaints = await res.json();
@@ -162,11 +167,16 @@ async function refreshChart() {
 async function submitComplaint(e) {
     e.preventDefault();
     console.log("Submit clicked");
-
+    // 1. Determine the final category value
+    let selectedCategory = document.getElementById("category").value;
+    if (selectedCategory === "Other") {
+        selectedCategory = document.getElementById("otherCategoryInput").value;
+    }
     // Gather data
     const data = {
         name: document.getElementById("name").value,
-        category: document.getElementById("category").value,
+        // category: document.getElementById("category").value,
+        category: selectedCategory,
         area: document.getElementById("location").value,
         latitude: document.getElementById("latitude").value,
         longitude: document.getElementById("longitude").value,
@@ -539,3 +549,17 @@ document.getElementById('mapSearch')?.addEventListener('keypress', function (e) 
         searchArea();
     }
 });
+
+function toggleOtherCategory() {
+    const categorySelect = document.getElementById("category");
+    const otherInput = document.getElementById("otherCategoryInput");
+    
+    if (categorySelect.value === "Other") {
+        otherInput.style.display = "block";
+        otherInput.required = true;
+    } else {
+        otherInput.style.display = "none";
+        otherInput.required = false;
+        otherInput.value = ""; // Clear it if they switch back
+    }
+}

@@ -4,7 +4,7 @@
 ![](screenshots/home.png)
 
 ## Report Submission
-![](screenshots/reportanissue.png)
+![](screenshots/reportissue.png)
 
 ## public Dashboard
 ![](screenshots/publicdashboard.png)

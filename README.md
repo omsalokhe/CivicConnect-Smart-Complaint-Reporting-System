@@ -1,27 +1,30 @@
 # CivicConnect-Smart-Complaint-Reporting-System
-CivicConnect is a smart, citizen-driven web platform that empowers people to report real-world civic issues like garbage, road damage, and broken streetlights. By enabling community participation, issue visibility, and admin-led resolution, it promotes transparency, faster action, and stronger civic responsibility at zero cost.
 
+CivicConnect is a high-performance, citizen-driven platform designed to bridge the gap between residents and local authorities. It empowers users to report real-world issues such as road damage, garbage, and streetlighting with precise GPS data, real-time tracking, and data-driven analytics and stronger civic responsibility at zero cost.
 
-## 🧩 Problem Statement
+- 🚀 Live Demo: Experience CivicConnect
+## 📺 Project Walkthrough
+Click the badge above to watch the full project explanation and technical demonstration
+
+## 🧩 The Problem
 
 In many cities, civic issues often go unreported or unresolved due to:
-- Lack of a unified complaint platform
-- No transparency in complaint resolution
-- Manual and inefficient tracking processes
-- Absence of digital accountability
+- Opacity: Citizens don't know the status of their reports.
+- Inaccuracy: Manual location descriptions lead to confusion for repair crews.
+- Redundancy: Multiple people reporting the same pothole creates data noise.
+- Friction: Complicated login processes prevent quick reporting.
 - Citizens rarely receive updates once a complaint is raised, leading to frustration and mistrust in governance systems.
 
-## 💡 Proposed Solution
+## 💡 Our Solution
 
 CivicConnect provides a zero-cost, web-based solution where:
-- Citizens can report issues with location details (manual input)
-- Complaints are stored and tracked digitally
-- Status updates are visible to both users and admins
-- Administrators can mark complaints as resolved
-- Duplicate complaints are intelligently grouped
+- Interactive Map Reporting: Users drop a pin to capture exact coordinates (Latitude/Longitude).
+- Public Dashboard: A transparent view of all civic issues and their current resolution status.
+- Intelligent Grouping: A "Report Same Issue" feature that increases priority without cluttering the database.
+- Visual Analytics: Dynamic charts to help authorities identify high-frequency problem zones.
 - This system ensures end-to-end visibility from complaint submission to resolution.
 
-  👉 View all screenshots in the **/screenshots** folder.
+## 👉 View all screenshots in the **/screenshots** folder.
 
 ## Process Flow & System Architecture Diagram
 
@@ -30,11 +33,8 @@ CivicConnect provides a zero-cost, web-based solution where:
 ## 🚀 Opportunities Addressed
  ![image](https://github.com/omsalokhe/CivicConnect-Smart-Complaint-Reporting-System/blob/8ff8e4820e6da8308370b6ec7800886077fb0f8a/public/image4_imresizer.jpg)
   
-## Existing Civic Complaint Systems in India
 
-<img width="1012" height="158" alt="image" src="https://github.com/user-attachments/assets/91462357-c038-42da-b47c-efae5704fd7c" />
-
- ## How CivicConnect Is Different & Better
+## How CivicConnect Is Different & Better
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/db85de9a-414b-4494-a7ac-b466acbd4516" />
 
@@ -60,6 +60,23 @@ CivicConnect provides a zero-cost, web-based solution where:
 - 🗄 Database
    - MongoDB
    - Mongoose ODM
+- Deployment
+   - Netlify (Frontend)
+- Analytics
+   - Google Charts API
+
+## 📂 System Architecture
+
+├── backend/
+│   ├── models/        # Mongoose Schemas (Complaint.js)
+│   ├── routes/        # API Endpoints (complaintRoutes.js)
+│   └── server.js      # Entry Point
+└── frontend/
+    ├── css/           # Modern UI styling (Dark/Light mode)
+    ├── js/            # Main logic & Admin Map integration
+    ├── index.html     # Landing Page
+    ├── dashboard.html # Public Analytics & Map
+    └── report.html    # Complaint Submission with Leaflet Map
  
 ## How to run locally?
 1. Clone the repo:
@@ -84,5 +101,10 @@ Open index.html using Live Server
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
-  
+
+## Developed with ❤️ for Smarter Cities.
+- linkedin : www.linkedin.com/in/om-salokhe-78abb4339
+- Demo Video Link: https://youtu.be/MkB5UNBteVA
+- MVP Link : CivicConnect is deployed on Netlify for high-performance frontend hosting, ensuring instant access across devices. It connects to a live backend API to deliver a smooth, real-time civic issue reporting experience.
+- https://civicconnectscomplaintsystem.netlify.app/
 

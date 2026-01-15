@@ -7,7 +7,7 @@
 ![](screenshots/reportanissue.png)
 
 ## public Dashboard
-![](screenshots/public_dashboard.png)
+![](screenshots/publicdashboard.png)
 
 ## Admin Dashboard
 ![](screenshots/admin_control_panel.png)

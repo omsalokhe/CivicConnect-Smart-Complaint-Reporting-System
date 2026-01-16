@@ -109,6 +109,8 @@ Open index.html using Live Server
 ## Developed with ❤️ for Smarter Cities.
 - linkedin : www.linkedin.com/in/om-salokhe-78abb4339
 - Demo Video Link: https://youtu.be/xBH3V7bbu4A
-- MVP Link : CivicConnect is deployed on Netlify for high-performance frontend hosting, ensuring instant access across devices. It connects to a live backend API to deliver a smooth, real-time civic issue reporting experience.
-- https://civicconnectscomplaintsystem.netlify.app/
-
+- MVP Link : CivicConnect is deployed on vercel for high-performance frontend hosting, ensuring instant access across devices. It connects to a live backend API on render to deliver a smooth, real-time civic issue reporting experience.
+- ## 📺 Live Project Links
+- **Frontend (UI):** [https://your-vercel-link.vercel.app](https://civic-connect-smart-complaint-repor.vercel.app/)
+- **Backend (API):** [https://civicconnect-smart-complaint-reporting.onrender.com/api/complaints](https://civicconnect-smart-complaint-reporting.onrender.com/api/complaints)
+- **Demo Video:** [https://youtu.be/xBH3V7bbu4A](https://youtu.be/xBH3V7bbu4A)

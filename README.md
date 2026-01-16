@@ -4,6 +4,7 @@ CivicConnect is a high-performance, citizen-driven platform designed to bridge t
 
 ## 📺 Project Walkthrough
 ### 🚀 [Live Demo: Experience CivicConnect](https://civicconnectscomplaintsystem.netlify.app/)
+### 🚀 [Demo Video Link: ](https://youtu.be/xBH3V7bbu4A)
 Click the badge above to watch the full project explanation and technical demonstration
 
 ## 🧩 The Problem
@@ -107,7 +108,7 @@ Open index.html using Live Server
 
 ## Developed with ❤️ for Smarter Cities.
 - linkedin : www.linkedin.com/in/om-salokhe-78abb4339
-- Demo Video Link: https://youtu.be/MkB5UNBteVA
+- Demo Video Link: https://youtu.be/xBH3V7bbu4A
 - MVP Link : CivicConnect is deployed on Netlify for high-performance frontend hosting, ensuring instant access across devices. It connects to a live backend API to deliver a smooth, real-time civic issue reporting experience.
 - https://civicconnectscomplaintsystem.netlify.app/
 

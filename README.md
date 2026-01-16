@@ -109,8 +109,14 @@ Open index.html using Live Server
 ## Developed with ❤️ for Smarter Cities.
 - linkedin : www.linkedin.com/in/om-salokhe-78abb4339
 - Demo Video Link: https://youtu.be/xBH3V7bbu4A
-- MVP Link : CivicConnect is deployed on vercel for high-performance frontend hosting, ensuring instant access across devices. It connects to a live backend API on render to deliver a smooth, real-time civic issue reporting experience.
+  
 - ## 📺 Live Project Links
+- MVP Link :
 - **Frontend (UI):** [https://your-vercel-link.vercel.app](https://civic-connect-smart-complaint-repor.vercel.app/)
+  - Hosting: Deployed on Vercel for high-performance frontend hosting, ensuring instant access across all devices.
+  - Performance: Optimized for speed and responsiveness to provide a seamless user experience.
 - **Backend (API):** [https://civicconnect-smart-complaint-reporting.onrender.com/api/complaints](https://civicconnect-smart-complaint-reporting.onrender.com/api/complaints)
-- **Demo Video:** [https://youtu.be/xBH3V7bbu4A](https://youtu.be/xBH3V7bbu4A)
+  - Hosting: Powered by a live Node.js/Express API on Render to deliver real-time civic issue reporting.
+  - Data Engine: Connects directly to MongoDB Atlas for secure, cloud-based data storage and status tracking.
+
+

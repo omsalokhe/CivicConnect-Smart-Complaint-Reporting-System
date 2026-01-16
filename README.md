@@ -3,7 +3,7 @@
 CivicConnect is a high-performance, citizen-driven platform designed to bridge the gap between residents and local authorities. It empowers users to report real-world issues such as road damage, garbage, and streetlighting with precise GPS data, real-time tracking, and data-driven analytics and stronger civic responsibility at zero cost.
 
 ## 📺 Project Walkthrough
-### 🚀 [Live Demo: Experience CivicConnect](https://civicconnectscomplaintsystem.netlify.app/)
+### 🚀 [Live Demo: Experience CivicConnect](https://civic-connect-smart-complaint-repor.vercel.app/)
 ### 🚀 [Demo Video Link: ](https://youtu.be/xBH3V7bbu4A)
 Click the badge above to watch the full project explanation and technical demonstration
 
